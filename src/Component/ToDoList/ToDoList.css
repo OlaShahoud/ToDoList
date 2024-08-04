@@ -1,0 +1,163 @@
+body {
+    background-color: #1f1e1e;
+    color: white;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.Title-ToDo {
+    text-align: center;
+}
+
+.ToDo-Wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: #353434;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 0px;
+    margin: auto;
+}
+
+.todo-input-List {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4d4b4b;
+    padding-bottom: 20px;
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.todo-input input {
+    margin-top: 10px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #fff;
+}
+
+.todo-input input:focus {
+    outline: 2px solid #dfb6b2;
+}
+
+.btn-add {
+    width: 60px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #dfb6b2;
+    cursor: pointer;
+}
+
+.btn-add:active {
+    background-color: #4d4b4b;
+    border: 2px solid #dfb6b2;
+    color: #fff;
+    transition: all .5s;
+    box-shadow: 0px 0px 20px 3px #727272;
+}
+
+.Btn-List {
+    padding: 10px 0px;
+}
+
+.btn-ToDo,
+.btn-Complated {
+    padding: 8px;
+    background-color: #686363;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #727272;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #dfb6b2;
+    transition: all .5s;
+}
+
+.btn-ToDo {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 2px solid #1f1e1e;
+}
+
+.btn-Complated {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ToDo-List-item {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px 0px #1d1c1c;
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+
+.ToDo-List-item h3 {
+    color: #dfb6b2;
+    font-size: 25px;
+}
+
+.ToDo-List-item p {
+    font-size: 20px;
+}
+
+.ToDo-icon {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.FaTrash,
+.FaPenToSquare {
+    font-size: 23px;
+    color: #fff;
+}
+
+.FaTrash:active {
+    color: rgb(136, 20, 20);
+}
+
+.FaPenToSquare:active {
+    color: #dfb6b2;
+}
+
+.FaCheck {
+    padding: 0px 20px;
+    color: rgb(22, 148, 22);
+    font-size: 23px;
+}
+
+.Edit-Todo {
+    background-color: #2e2d2d;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 6px gray;
+    border-radius: 10px;
+}
+
+.Edit-Todo input,
+.Edit-Todo textarea {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    outline: 2px solid #dfb6b2;
+}
+
+.btn-update {
+    font-size: 16px;
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
